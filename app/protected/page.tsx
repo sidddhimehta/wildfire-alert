@@ -117,7 +117,7 @@ export default function ProtectedPage() {
             );
 
             // Send email alert
-            await fetch("https://wildfire-alerts-j8kw.onrender.com/send-email", {
+            await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/send-email`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
