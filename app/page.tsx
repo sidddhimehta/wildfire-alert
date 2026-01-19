@@ -95,7 +95,7 @@ export default function HomePage() {
 
          <p className="mt-6 text-lg text-slate-600 max-w-3xl mx-auto">
            To receive free personalized wildfire alerts, users must create an
-           account and sign in. This allows the  <br />system to securely assess risk
+           account and sign in. This allows the system to securely assess risk
            near your location and provide guidance during emergencies. 
 
          </p> 
