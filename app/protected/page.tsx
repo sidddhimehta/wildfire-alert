@@ -102,6 +102,18 @@ export default function ProtectedPage() {
           setShelterName("");
           setMapsLink("");
           setDistance(`${data.distance_km?.toFixed(1) || "?"} km`);
+
+          // Send email alert for LOW risk
+          await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/send-email`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              risk: data.risk,
+              shelter_name: "",
+              maps_link: "",
+              user_email: userEmail,
+            }),
+          });
         } else if (data.risk === "MEDIUM" || data.risk === "HIGH") {
           setAlertMessage(
             data.risk === "MEDIUM"
@@ -202,7 +214,7 @@ export default function ProtectedPage() {
             Our Mission 
           </h3>
           <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-            Wildfires have become a growing safety and environmental crisis, especially in regions prone to heatwaves, drought, and low humidity. In the United States alone, more than 115 million people live in areas with high wildfire risk, meaning a significant portion of the population could face danger from fire at any given moment of time.
+            Wildfires have become a growing safety and environmental crisis, especially in regions prone to heatwaves, drought, and low humidity. In the United States alone, more than 115 million people live in areas with high wildfire risk, meaning a significant portion of the population could face danger from fire at any given moment of time.
             Every year, families are displaced, homes are destroyed, and lives are put at risk because evacuation information is delayed, unclear, or inaccessible. To solve this ongoing crisis, we created Wildfire Alert. A powerful tool that combines AI and location intelligence to deliver real‑time, location‑specific fire alerts and clear evacuation guidance so individuals can stay informed, act quickly, and stay safe when it matters most.
           </p>
         </div>
