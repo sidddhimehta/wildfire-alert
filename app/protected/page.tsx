@@ -145,7 +145,7 @@ export default function ProtectedPage() {
     <main className="min-h-screen bg-white">
       <header className="w-full bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-xl font-semibold tracking-wide">WildfireAlerts</h1>
+          <h1 className="text-xl font-semibold tracking-wide">Wildfire Alerts</h1>
           <button 
             onClick={async () => {
               await supabase.auth.signOut();

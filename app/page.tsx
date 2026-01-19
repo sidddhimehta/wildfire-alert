@@ -22,7 +22,7 @@ export default function HomePage() {
                    hover:shadow-[0_0_20px_rgba(249,115,22,0.4)] 
                    active:scale-95 transition-all duration-200"
             >
-              Log In
+              Login
             </button>
 
             <button
@@ -32,7 +32,7 @@ export default function HomePage() {
                    hover:shadow-[0_0_20px_rgba(194,65,12,0.4)] 
                    active:scale-95 transition-all duration-200"
             >
-              Sign Up
+              Sign up
             </button>
           </div>
         </div>
