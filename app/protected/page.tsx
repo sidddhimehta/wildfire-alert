@@ -214,37 +214,37 @@ export default function ProtectedPage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h4 className="font-semibold text-lg">1. Stay Informed</h4>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-black-600">
                 Monitor wildfire alerts and weather updates so you can respond early to potential danger.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h4 className="font-semibold text-lg">2. Create an Evacuation Plan</h4>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-black-600">
                 Know multiple evacuation routes and establish a family meeting point ahead of time.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h4 className="font-semibold text-lg">3. Prepare an Emergency Kit</h4>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-black-600">
                 Pack water, food, medications, important documents, and phone chargers.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h4 className="font-semibold text-lg">4. Protect Your Home</h4>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-black-600">
                 Remove dry vegetation and secure windows and doors to reduce fire risk.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h4 className="font-semibold text-lg">5. Be Ready to Leave</h4>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-black-600">
                 Keep your car fueled and essential items easily accessible.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <h4 className="font-semibold text-lg">6. Follow Official Guidance</h4>
-              <p className="mt-2 text-slate-600">
+              <p className="mt-2 text-black-600">
                 Always follow instructions from emergency services and local authorities.
               </p>
             </div>
